@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Momina Aziz - Full-Stack Developer & Computer Science Student">
-    <title>Momina Aziz | Developer Portfolio</title>
+    <meta name="description" content="Momina Aziz - Full-Stack Developer & ML Engineer specializing in Java, Python, MERN Stack, and Machine Learning">
+    <title>Momina Aziz | Software Engineer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="nav-container">
-            <a href="#home" class="logo">Momina Aziz</a>
-            <button class="menu-toggle" id="menu-toggle">
+            <a href="#home" class="logo">MA</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
             <nav id="nav-menu">
@@ -20,6 +20,7 @@
                 <a href="#about" class="nav-link">About</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </nav>
         </div>
     </header>
@@ -28,106 +29,168 @@
         <div class="container">
             <div class="home">
                 <div class="home-content">
-                    <h1>Full-Stack & ML Engineer</h1>
-                    <h2>Computer Science Student at Northeastern Illinois University</h2>
-                    <p>Motivated software engineer with expertise in full-stack development and machine learning. Building intelligent, user-centric applications with modern technologies.</p>
+                    <p class="intro-label">Hello, I'm</p>
+                    <h1>Momina Aziz</h1>
+                    <h2>Full-Stack Developer & ML Engineer</h2>
+                    <p class="tagline">Building scalable backend systems, intelligent ML solutions, and modern web applications. Specialized in Java Spring Boot, MERN stack, and machine learning.</p>
                     
-                    <div class="skills-preview">
-                        <span class="skill-tag">Java/Spring Boot</span>
-                        <span class="skill-tag">MERN Stack</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">SQL/NoSQL</span>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number">3.4</span>
+                            <span class="stat-label">GPA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
                     </div>
                     
                     <div class="home-actions">
                         <a href="#projects" class="btn btn-primary">
                             <i class="fas fa-code"></i> View Projects
                         </a>
-                        <a href="Momina-Aziz-Resume-2.pdf" class="btn btn-outline" download>
-                            <i class="fas fa-download"></i> Resume
+                        <a href="Aziz_Momina_resume.pdf" class="btn btn-outline" download>
+                            <i class="fas fa-download"></i> Download Resume
                         </a>
                     </div>
                     
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/momina-aziz-094606221/" target="_blank" class="social-link">
+                        <a href="https://www.linkedin.com/in/momina-aziz-094606221/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://github.com/maziz6" target="_blank" class="social-link">
+                        <a href="https://github.com/maziz6" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
                             <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:mominaziz08@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
                 <div class="home-image">
-                   <img src="Momina-Aziz2.jpg" alt="Momina Aziz" class="profile-img">
+                   <div class="image-wrapper">
+                       <img src="Momina-Aziz2.jpg" alt="Momina Aziz" class="profile-img">
+                       <div class="image-backdrop"></div>
+                   </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2 class="section-title">About</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="about-grid">
                 <div class="about-text">
                     <h3>Background</h3>
-                    <p>Computer Science student with strong foundations in software engineering, full-stack development, and machine learning. Proven ability to design, build, and deploy end-to-end applications using Java and web technologies, complemented by hands-on experience in NLP and ML model development.</p>
+                    <p>Computer Science student at Northeastern Illinois University specializing in Machine Learning and Artificial Intelligence with hands-on experience developing full-stack applications and intelligent systems. I combine technical expertise with business acumen through a management minor, bridging the gap between technical implementation and strategic organizational objectives.</p>
+                    
+                    <p>With 2 years of freelance full-stack development experience, I've delivered end-to-end web applications using the MERN stack while maintaining strong foundations in Java and Spring Boot for enterprise-level backend systems.</p>
                     
                     <div class="education-item">
-                        <h4>B.S. Computer Science</h4>
-                        <p class="meta">Northeastern Illinois University | Expected Dec 2025 | GPA: 3.0</p>
-                        <p style="color: var(--gray); font-size: 0.95rem;">Coursework: Java Programming, Data Structures, Software Engineering, Database Management, NLP, Machine Learning</p>
+                        <h4><i class="fas fa-graduation-cap"></i> B.S. Computer Science</h4>
+                        <p class="meta">Northeastern Illinois University | Expected Spring 2027 | GPA: 3.4/4.0</p>
+                        <div class="coursework-highlight">
+                            <strong>Key Coursework:</strong> Object-Oriented Programming, Data Structures & Algorithms, Software Engineering, Database Management, Machine Learning, Natural Language Processing, Human-Computer Interaction, Computer Ethics
+                        </div>
                     </div>
                 </div>
                 
-                <div class="skills-grid">
+                <div class="skills-section">
+                    <h3>Technical Skills</h3>
+                    
                     <div class="skill-category">
-                        <h4>Languages & Frameworks</h4>
-                        <ul class="skill-list">
-                            <li>Java, Python, JavaScript</li>
-                            <li>Spring Boot, MERN Stack</li>
-                            <li>RESTful APIs, Express.js</li>
-                        </ul>
+                        <h4><i class="fas fa-code"></i> Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                        </div>
                     </div>
                     
                     <div class="skill-category">
-                        <h4>Databases & ML</h4>
-                        <ul class="skill-list">
-                            <li>MySQL, PostgreSQL, MongoDB</li>
-                            <li>Scikit-learn, Pandas, NumPy</li>
-                            <li>NLTK, spaCy, Neural Networks</li>
-                        </ul>
+                        <h4><i class="fas fa-server"></i> Backend & Frameworks</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">Hibernate</span>
+                            <span class="skill-tag">JDBC</span>
+                        </div>
                     </div>
-
+                    
                     <div class="skill-category">
-                        <h4>Tools & Methods</h4>
-                        <ul class="skill-list">
-                            <li>Git, GitHub, Docker</li>
-                            <li>Agile/Scrum, JUnit</li>
-                            <li>JDBC, Hibernate, Spring Data JPA</li>
-                        </ul>
+                        <h4><i class="fas fa-laptop-code"></i> Frontend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">Component Architecture</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4><i class="fas fa-database"></i> Databases</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Query Optimization</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4><i class="fas fa-brain"></i> ML & Data Science</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">NLTK</span>
+                            <span class="skill-tag">spaCy</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4><i class="fas fa-tools"></i> Tools & Practices</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Agile/Scrum</span>
+                            <span class="skill-tag">JUnit</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-     <section id="experience">
+    <section id="experience">
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">Dec 2022 - Dec 2024</div>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Freelance Full-Stack Developer</h3>
-                        <p class="company">Self-Employed | Remote</p>
-                        <ul>
-                            <li>Engineered full-stack web applications using MERN stack from concept through deployment</li>
-                            <li>Developed secure RESTful APIs with Node.js/Express.js implementing authentication and middleware</li>
-                            <li>Designed and managed MongoDB databases, optimizing schemas for application requirements</li>
-                            <li>Built dynamic React interfaces with component-based architecture and state management</li>
-                            <li>Collaborated with clients in Agile environment, delivering projects on time to specification</li>
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Freelance Full-Stack Developer</h3>
+                                <p class="company"><i class="fas fa-building"></i> Self-Employed | Remote</p>
+                            </div>
+                            <span class="timeline-date">Dec 2022 - Dec 2024</span>
+                        </div>
+                        <ul class="achievement-list">
+                            <li>Delivered end-to-end web applications for multiple clients using the MERN stack (MongoDB, Express.js, React, Node.js), managing projects from requirements gathering through deployment</li>
+                            <li>Built secure RESTful APIs with Node.js and Express.js, implementing authentication, authorization, input validation, and comprehensive error handling</li>
+                            <li>Designed and optimized MongoDB database schemas, ensuring efficient data retrieval and maintaining data integrity across applications</li>
+                            <li>Developed responsive, user-friendly interfaces with React, leveraging hooks, state management, and component lifecycle optimization for enhanced performance</li>
+                            <li>Worked directly with clients in Agile sprints, incorporating feedback iteratively and consistently meeting project deadlines and quality standards</li>
                         </ul>
                     </div>
                 </div>
@@ -135,62 +198,95 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <i class="fas fa-crown project-icon"></i>
-                        <h3>Cottagecore Quiz</h3> 
+                        <i class="fas fa-leaf project-icon"></i>
+                        <span class="project-badge">Frontend</span>
                     </div>
-                    <p>Multi-step quiz with responsive design to help users discover their cottagecore aesthetic.</p>
+                    <h3>Cottagecore Quiz</h3>
+                    <p>Interactive multi-step quiz application with responsive design to help users discover their cottagecore aesthetic preferences. Features smooth transitions and engaging user experience.</p>
                     <div class="tech-stack">
                         <span class="tech-tag">HTML5</span>
                         <span class="tech-tag">CSS3</span>
                         <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive Design</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/maziz6/cottagecore-quiz" target="_blank" class="project-link">
-                           <i class="fab fa-github"></i> Code
+                        <a href="https://github.com/maziz6/cottagecore-quiz" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="fab fa-github"></i> Code
                         </a>
-                        <a href="https://maziz6.github.io/cottagecore-quiz/" target="_blank" class="project-link">
+                        <a href="https://maziz6.github.io/cottagecore-quiz/" target="_blank" rel="noopener noreferrer" class="project-link">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
                     </div>
                 </div>
-            </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
+            </div>
+            
+            <div class="cta-box">
+                <h3>Want to see more?</h3>
+                <p>Check out my GitHub for additional projects and contributions</p>
+                <a href="https://github.com/maziz6" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <i class="fab fa-github"></i> Visit GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
         <div class="container">
-            <h2 class="section-title">What People Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>Momina delivered our e-commerce platform ahead of schedule. Her strong foundation in software engineering principles was evident in the clean, maintainable code she produced.</p>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I'm currently seeking full-time software engineering opportunities and open to internships. Whether you have a project in mind, want to discuss technology, or just want to connect, feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Chicago, IL</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:mominaziz08@gmail.com">mominaziz08@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+17738374940">(773) 837-4940</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="testimonial-author">
+                    
+                    <div class="availability-box">
+                        <i class="fas fa-check-circle"></i>
                         <div>
-                            <h4>Sarah Johnson</h4>
-                            <p>CEO, Retail Solutions</p>
+                            <strong>Availability:</strong> Immediately available for full-time roles; flexible schedule for internships
                         </div>
                     </div>
                 </div>
                 
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left quote-icon"></i>
-                        <p>Momina consistently demonstrates exceptional problem-solving skills in her coursework, particularly in implementing complex data structures and algorithms efficiently.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div>
-                            <h4>Professor Michael Chen</h4>
-                            <p>Computer Science Department, NEIU</p>
-                        </div>
-                    </div>
+                <div class="contact-actions">
+                    <a href="mailto:mominaziz08@gmail.com" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> Send Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/momina-aziz-094606221/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-large">
+                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    </a>
+                    <a href="Aziz_Momina_resume.pdf" class="btn btn-outline btn-large" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
                 </div>
             </div>
         </div>
@@ -199,16 +295,33 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">Momina Aziz</div>
+                <div class="footer-info">
+                    <div class="footer-logo">Momina Aziz</div>
+                    <p>Full-Stack Developer & ML Engineer</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
                 <div class="footer-social">
-                    <a href="https://github.com/maziz6" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/momina-aziz-094606221/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:mominaziz08@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/maziz6" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/momina-aziz-094606221/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:mominaziz08@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
-            <p class="copyright">&copy; 2024 Momina Aziz. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Momina Aziz. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
+    </section>
